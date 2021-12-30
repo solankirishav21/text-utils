@@ -86,7 +86,7 @@ export default function Textarea(props) {
         <h2> Text Summary</h2>
         <p>
           {" "}
-          {text.split(" ").filter((element)=>{return element.length!=0}).length} words and {text.length} characters
+          {text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters
         </p>
         <h3> Preview</h3>
         <p>{text.length>0?text:"Enter the text to preview" }</p>
