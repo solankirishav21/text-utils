@@ -48,45 +48,45 @@ export default function Textarea(props) {
         </div>
         <button
           type="button"
-          className="btn btn-secondary mx-2"
+          className="btn btn-secondary mx-2 my-1"
           onClick={handleUpperCase}
         >
           Convert to UPPERCASE
         </button>
         <button
           type="button"
-          className="btn btn-secondary mx-2"
+          className="btn btn-secondary mx-2 my-1"
           onClick={handleLowerCase}
         >
           Convert to LOWERCASE
         </button>
         <button
           type="button"
-          className="btn btn-secondary mx-2"
+          className="btn btn-secondary mx-2 my-1"
           onClick={handleCopy}
         >
           Copy Text
         </button>
         <button
           type="button"
-          className="btn btn-secondary mx-2"
+          className="btn btn-secondary mx-2 my-1"
           onClick={handleExtraSpaces}
         >
           Remove Extra Spaces
         </button>
         <button
           type="button"
-          className="btn btn-secondary mx-2"
+          className="btn btn-secondary mx-2 my-1"
           onClick={handleClearText}
         >
           Clear
         </button>
       </div>
-      <div className="container my-3">
+      <div className="container my-3 my-2">
         <h2> Text Summary</h2>
         <p>
           {" "}
-          {text.split(" ").length} words and {text.length} characters
+          {text.split(" ").filter((element)=>{return element.length!=0}).length} words and {text.length} characters
         </p>
         <h3> Preview</h3>
         <p>{text.length>0?text:"Enter the text to preview" }</p>
